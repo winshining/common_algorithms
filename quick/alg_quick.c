@@ -4,6 +4,8 @@ void alg_quick_sort(ssize_t *array, ssize_t left, ssize_t right)
 {
     ssize_t temp, i, j;
 
+    assert(array);
+
     if (left < right) {
         temp = array[left], i = left, j = right;
 
