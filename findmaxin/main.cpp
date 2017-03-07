@@ -6,7 +6,7 @@ int main()
 	const int size = 100000000;
 	const int delta = 400;
 
-	int *buf = NULL;
+	int* buf = NULL;
 	struct tms begTime, endTime;
 	long beg, end;
 	int clocks_per_sec = sysconf(_SC_CLK_TCK);

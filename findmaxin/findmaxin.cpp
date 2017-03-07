@@ -1,5 +1,9 @@
 #include "findmaxin.h"
 
+/*
+ * More details refer to: http://blog.csdn.net/winshining/article/details/50389596
+ */
+
 static bool gt(const int a, const int b)
 {
   return a > b;
@@ -13,7 +17,7 @@ static void swap(int* buff, const int i, const int j)
   buff[j] = temp;
 }
 
-void findmaxin(int *buff, const int k, const int size, const int delta)
+void findmaxin(int* buff, const int k, const int size, const int delta)
 {
   if (!buff || delta <= 0 || delta > k || k <= 0 || size <= 0 || k > size - k) {
     cout << "bad parameters." << endl;
