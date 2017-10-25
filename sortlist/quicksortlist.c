@@ -106,9 +106,19 @@ int main()
     *iter = create_list_node(4);
     iter = &(*iter)->next;
 
+    printf("origin list: ");
+	iter = &head;
+	while (*iter) {
+		printf("%d ", (*iter)->key);
+		iter = &(*iter)->next;
+	}
+
+	printf("\n");
+
     head = sort_list(head);
     iter = &head;
 
+    printf("sorted list: ");
     while (*iter) {
         printf("%d ", (*iter)->key);
         iter = &(*iter)->next;
